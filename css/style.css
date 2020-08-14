@@ -1,0 +1,102 @@
+/* Alguns imports (fonts e icones) */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+/* Root */
+
+:root {
+    --font-primary: 'Baloo Tamma 2';
+    --font-secundary: 'Roboto';
+    --font-action: 'Roboto Mono';
+}
+
+
+/* Fonts */
+
+h1 {
+    font-family: var(--font-primary);
+}
+
+h2 {
+    font-family: var(--font-secundary);
+}
+
+h3 {
+    font-family: var(--font-secundary);
+}
+
+p {
+    font-family: var(--font-secundary);
+}
+
+button {
+    font-family: var(--font-action);
+}
+
+a {
+    font-family: var(--font-action);
+}
+
+
+/* Header */
+
+.cabess {
+    width: 92%;
+    float: left;
+    padding: 3% 4%;
+}
+
+.logo {
+    width: 3.5rem;
+    height: 3.5rem;
+    float: left;
+    background: url(../img/logo/logo-mobile.png) center center/3.5rem no-repeat;
+    font-size: 0;
+}
+
+.botao {
+    width: 3.5rem;
+    height: 3.5rem;
+    float: right;
+    text-align: center;
+    border-radius: 3.5rem;
+    cursor: pointer;
+    background: #C6FFDD;
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+}
+
+
+/* Menu */
+
+.menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.521);
+    top: 0;
+    left: 0;
+}
+
+.ali {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    float: left;
+    background: chartreuse;
+}
+
+.menu ul li {
+    padding: 1.5%;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-close {
+    font-size: 3rem;
+    color: #FBD786;
+    float: right;
+    cursor: pointer;
+    margin-right: 5%;
+}

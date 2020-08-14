@@ -93,6 +93,12 @@ pre {
 
 a {
     background-color: transparent;
+    text-decoration: none;
+    list-style: none;
+}
+
+ul {
+    list-style: none;
 }
 
 
@@ -177,6 +183,7 @@ sup {
 
 img {
     border-style: none;
+    max-width: 100%;
 }
 
 

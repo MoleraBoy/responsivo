@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<!-- Começo da Head -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site totalmente responsivo.">
-    <meta name="keywords" content="Site, Desenvolvimento Web, Responsivo, Design">
+    <meta name="description" content="Seja frio e calculista como esse site...">
+    <meta name="keywords" content="Sit voltado para o humor frio e calculista">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Matheus Brandão da Silva">
-    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../img/icones/apple.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/icones/32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/icones/16.png">
     <link rel="manifest" href="../img/icones/res.webmanifest">
-    <title>Seja Frio e Calculista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <title>Frio e Calculista</title>
+
 </head>
 
-
-<!-- Fim da Head -->
-
 <body>
-    <header class="cabess">
-        <a href="index.html">
-            <h1 class="logo">Seja Frio e Calculista</h1>
+    <header class="cabess ">
+        <a href="index.html ">
+            <h1 class="logo ">Frio e Calculista</h1>
         </a>
-        <button class="botao"><i class="fa fa-bars fa-lg"></i></button>
-        <nav class="menu">
-            <a href="index.html" class="btn-close">x</a>
-            <ul class="ali">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Clientes</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Contato</a></li>
+        <button class="btn-menu "><i class="fa fa-bars fa-lg "></i></button>
+        <nav class="menu ">
+            <a href="#" class="btn-close "><i class="fa fa-times-circle"></i></a>
+            <ul>
+                <li>
+                    <a href="#">Home</a></li>
+                <li>
+                    <a href="#">Clientes</a></li>
+                <li>
+                    <a href="#">Serviços</a></li>
+                <li>
+                    <a href="#">blog</a></li>
+                <li>
+                    <a href="#">Quem somos</a></li>
+                <li>
+                    <a href="#">Contato</a></li>
             </ul>
         </nav>
+        <div class="banner">
+            <div class="title">
+                <h2>Sim eu não ligo. Porque? Eu sou frio e calculista.</h2>
+                <h3>Sim eu não rio. Porque? Eu sou frio e calculista.</h3>
+            </div>
+            <div class="buttons">
+                <button class="btn-cadastrar">Cadastrar<i class="fa fa-sign-in-alt"></i></button>
+                <button class="btn-sobre">Sobre <i class="fa fa-question-circle"></i> </button>
+            </div>
+        </div>
+        <main class="servicos">
+            <article class="servico">
+                <a href="#"><img src="../img/criações/frio.jpg" title="Imagem de @muresan113" alt="Frio"></a>
+                <div class="inner">
+                    <a href="#">Mude seu mindset</a>
+                    <h4>Saia do emotivo ao rei delas</h4>
+                    <p>Se está aqui certamente não é frio e calculista. Então só direi uma vez, me dê dinheiro e eu te darei o controle sobre o mundo frio e calculista.</p>
+                </div>
+            </article>
+            <article class="servico">
+                <a href="#"><img src="../img/criações/frio-2.jpg" title="Imagem de @muresan113" alt="Frio"></a>
+                <div class="inner">
+                    <a href="#">Se vista como um campeão</a>
+                    <h4>De chinela e regata não dá né campeão</h4>
+                    <p>Use ternos, fim. Pode estar o calor que for, tu pode estar indo apenas comprar pão e cigarro, vá de terno. <i>Mas vou à praia e-</i> <b>Shhh!</b> Use terno! </p>
+                </div>
+            </article>
+            <article class="servico">
+                <a href="#"><img src="../img/criações/frio-3.jpg" title="Imagem de @muresan113" alt="Frio"></a>
+                <div class="inner">
+                    <a href="#">Fume muito</a>
+                    <h4>Se fuma então é perigoso</h4>
+                    <p><i>Mas isso não amarela os dentes? Tem a questão do cancer tam-</i> <b>Shhh!</b> Pode ter certeza que se eu estivesse ai te agrediria brutalmente a troco de nada, depois eu acenderia um cigarro.</p>
+                </div>
+            </article>
+        </main>
     </header>
 </body>
 

@@ -1,102 +1,245 @@
-/* Alguns imports (fonts e icones) */
-
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
-
-/* Root */
-
-:root {
-    --font-primary: 'Baloo Tamma 2';
-    --font-secundary: 'Roboto';
-    --font-action: 'Roboto Mono';
-}
-
-
-/* Fonts */
-
-h1 {
-    font-family: var(--font-primary);
-}
-
-h2 {
-    font-family: var(--font-secundary);
-}
-
-h3 {
-    font-family: var(--font-secundary);
-}
-
-p {
-    font-family: var(--font-secundary);
-}
-
-button {
-    font-family: var(--font-action);
-}
-
-a {
-    font-family: var(--font-action);
-}
-
-
-/* Header */
-
-.cabess {
-    width: 92%;
-    float: left;
-    padding: 3% 4%;
-}
-
-.logo {
-    width: 3.5rem;
-    height: 3.5rem;
-    float: left;
-    background: url(../img/logo/logo-mobile.png) center center/3.5rem no-repeat;
-    font-size: 0;
-}
-
-.botao {
-    width: 3.5rem;
-    height: 3.5rem;
-    float: right;
-    text-align: center;
-    border-radius: 3.5rem;
-    cursor: pointer;
-    background: #C6FFDD;
-    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-}
-
-
-/* Menu */
-
-.menu {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.521);
-    top: 0;
-    left: 0;
-}
-
-.ali {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    float: left;
-    background: chartreuse;
-}
-
-.menu ul li {
-    padding: 1.5%;
-    text-align: center;
-    align-items: center;
-}
-
-.btn-close {
-    font-size: 3rem;
-    color: #FBD786;
-    float: right;
-    cursor: pointer;
-    margin-right: 5%;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 100;
+            border: none;
+            outline: none;
+            font-weight: 300;
+            box-sizing: border-box;
+            font-family: var(--font-secundary);
+        }
+        /* Root */
+        
+         :root {
+            --font-primary: 'Baloo Tamma 2';
+            --font-secundary: 'Roboto';
+            --font-action: 'Roboto Condensed';
+        }
+        /* Formatação dos textos e imagens */
+        
+        h1 {
+            font-family: var(--font-primary);
+            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+        }
+        
+        h2 {
+            font-family: var(--font-secundary);
+            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+        }
+        
+        h3 {
+            font-family: var(--font-secundary);
+            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+        }
+        
+        h4 {
+            font-family: var(--font-secundary);
+            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+        }
+        
+        p {
+            font-family: var(--font-secundary);
+            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+        }
+        
+        button {
+            font-family: var(--font-action);
+            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+        }
+        
+        a {
+            font-family: var(--font-action);
+            text-decoration: none;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        body {
+            background: #C6FFDD;
+            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+            background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+        }
+        /* Cabess */
+        
+        .cabess {
+            width: 100%;
+            float: left;
+            padding: 3% 4%;
+        }
+        
+        .logo {
+            width: 56px;
+            height: 56px;
+            float: left;
+            background: url(../img/logo/logo-mobile.png) center center/56px no-repeat;
+            font-size: 0;
+            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
+        }
+        
+        .btn-menu {
+            width: 56px;
+            height: 56px;
+            float: right;
+            text-align: center;
+            color: #ff5858;
+            border-radius: 56px;
+            cursor: pointer;
+            background: #C6FFDD;
+            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+            background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
+            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
+        }
+        /* Menu */
+        
+        .menu {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background-color: rgba(0, 0, 0, .5);
+            top: 0;
+            left: 0;
+        }
+        
+        .btn-close {
+            font-size: 1.5rem;
+            color: #FBD786;
+            float: right;
+            margin: 2% 3% 0 0;
+        }
+        
+        .menu ul {
+            width: 100%;
+            float: left;
+            text-align: center;
+        }
+        
+        .menu li {
+            padding: 1.5%;
+        }
+        
+        .menu li a {
+            font-size: 2.6rem;
+            color: whitesmoke;
+            padding: 1.5% 3%;
+            text-shadow: .3rem .4rem 0.125rem rgba(185, 126, 77, 0.219);
+        }
+        
+        .menu li a:hover {
+            border: 1px solid #ffd95b;
+        }
+        
+        .banner {
+            width: 100%;
+            float: left;
+            text-align: center;
+            padding: 3% 4%;
+            background: url(../img/bg/bg-banner.jpg) no-repeat fixed;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, .35);
+            background-blend-mode: multiply;
+            background-attachment: fixed;
+            opacity: .95;
+        }
+        
+        .title {
+            width: 100%;
+        }
+        
+        .title h2 {
+            font-size: 2.5rem;
+            color: rgb(252, 236, 208);
+            font-weight: 700;
+        }
+        
+        .title h3 {
+            font-size: 1.5rem;
+            color: rgb(252, 236, 208);
+        }
+        
+        .banner .btn-cadastrar {
+            width: 100%;
+            font-size: 2rem;
+            text-align: center;
+            cursor: pointer;
+            padding: 5%;
+            border-radius: 10px;
+            margin-top: 2%;
+            background: #C6FFDD;
+            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+            background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
+            color: #a14100;
+        }
+        
+        .banner .btn-sobre {
+            width: 100%;
+            font-size: 2rem;
+            text-align: center;
+            cursor: pointer;
+            padding: 5%;
+            border-radius: 10px;
+            margin-top: 2%;
+            background: #C6FFDD;
+            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+            background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+            color: #a14100;
+        }
+        
+        .banner button i {
+            float: right;
+        }
+        /* Serviços */
+        
+        .servicos {
+            width: 100%;
+            float: left;
+            padding: 3% 4%;
+            padding-right: 8%;
+        }
+        
+        .servico {
+            width: 100%;
+            text-align: left;
+            margin: 3%;
+            background: #C6FFDD;
+            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+            background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
+            border-radius: 7px;
+            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
+        }
+        
+        .servico img {
+            border-radius: 7px 7px 0 0;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .inner {
+            padding: 7%;
+        }
+        
+        .inner a {
+            font-size: 1.5rem;
+            color: #a14100;
+            font-weight: 700;
+        }
+        
+        .inner h4 {
+            font-size: 1.2rem;
+            color: #672100;
+            margin-top: 3%;
+            font-weight: 490;
+        }
+        
+        .inner p {
+            margin-top: 6%;
+            color: rgb(44, 21, 0);
+            line-height: 1.5rem;
+            font-weight: 290;
+        }

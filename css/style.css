@@ -15,7 +15,7 @@
             --font-secundary: 'Roboto';
             --font-action: 'Roboto Condensed';
         }
-        /* Formatação dos textos e imagens */
+        /* Formatação dos textos, imagens, cores etc */
         
         h1 {
             font-family: var(--font-primary);
@@ -42,14 +42,42 @@
             text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
         }
         
+        body span {
+            font-family: var(--font-secundary);
+            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+            color: #fbebcd;
+            opacity: .5;
+            visibility: hidden;
+        }
+        
         button {
             font-family: var(--font-action);
             text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
         }
         
+        button:hover {
+            color: rgb(255, 68, 0);
+        }
+        
+        button i:hover {
+            color: rgb(255, 68, 0);
+        }
+        
         a {
             font-family: var(--font-action);
             text-decoration: none;
+        }
+        
+        a:hover {
+            color: rgb(255, 68, 0);
+        }
+        
+        .link a:hover {
+            color: rgb(255, 68, 0);
+        }
+        
+        ul li a:hover {
+            color: rgb(255, 68, 0);
         }
         
         ul {
@@ -63,15 +91,49 @@
         body {
             background: #C6FFDD;
             background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-            background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+            background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
         }
-        /* Cabess */
         
-        .cabess {
+        .container {
             width: 100%;
             float: left;
             padding: 3% 4%;
+            text-align: center;
         }
+        
+        .bg-left {
+            background: #C6FFDD;
+            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+            background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
+        }
+        
+        .bg-right {
+            background: #C6FFDD;
+            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+            background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+        }
+        
+        .bg-2-left {
+            background: #FDC830;
+            background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+            background: linear-gradient(to left, #F37335, #FDC830);
+        }
+        
+        .bg-2-right {
+            background: #FDC830;
+            background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+            background: linear-gradient(to right, #F37335, #FDC830);
+            opacity: .9;
+        }
+        
+        .radius {
+            border-radius: 5px;
+        }
+        
+        .inner a {
+            font-size: 10rem;
+        }
+        /* Cabess */
         
         .logo {
             width: 56px;
@@ -79,7 +141,7 @@
             float: left;
             background: url(../img/logo/logo-mobile.png) center center/56px no-repeat;
             font-size: 0;
-            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
+            box-shadow: rgba(0, 0, 0, .35);
         }
         
         .btn-menu {
@@ -90,9 +152,6 @@
             color: #ff5858;
             border-radius: 56px;
             cursor: pointer;
-            background: #C6FFDD;
-            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-            background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
             box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
         }
         /* Menu */
@@ -105,6 +164,7 @@
             background-color: rgba(0, 0, 0, .5);
             top: 0;
             left: 0;
+            z-index: 100;
         }
         
         .btn-close {
@@ -132,20 +192,21 @@
         }
         
         .menu li a:hover {
-            border: 1px solid #ffd95b;
+            border: 1px solid #cf530086;
         }
         
         .banner {
-            width: 100%;
-            float: left;
-            text-align: center;
-            padding: 3% 4%;
+            margin-top: 5%;
             background: url(../img/bg/bg-banner.jpg) no-repeat fixed;
             background-size: cover;
             background-color: rgba(0, 0, 0, .35);
             background-blend-mode: multiply;
             background-attachment: fixed;
             opacity: .95;
+        }
+        
+        .banner:hover span {
+            visibility: visible;
         }
         
         .title {
@@ -156,14 +217,16 @@
             font-size: 2.5rem;
             color: rgb(252, 236, 208);
             font-weight: 700;
+            margin-bottom: 2%;
         }
         
         .title h3 {
             font-size: 1.5rem;
             color: rgb(252, 236, 208);
+            margin-bottom: 2%;
         }
         
-        .banner .btn-cadastrar {
+        .banner .btn {
             width: 100%;
             font-size: 2rem;
             text-align: center;
@@ -171,24 +234,8 @@
             padding: 5%;
             border-radius: 10px;
             margin-top: 2%;
-            background: #C6FFDD;
-            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-            background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
             color: #a14100;
-        }
-        
-        .banner .btn-sobre {
-            width: 100%;
-            font-size: 2rem;
-            text-align: center;
-            cursor: pointer;
-            padding: 5%;
-            border-radius: 10px;
-            margin-top: 2%;
-            background: #C6FFDD;
-            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-            background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-            color: #a14100;
+            font-size: 1.5rem;
         }
         
         .banner button i {
@@ -197,27 +244,28 @@
         /* Serviços */
         
         .servicos {
-            width: 100%;
-            float: left;
-            padding: 3% 4%;
-            padding-right: 8%;
+            padding-right: 9%;
         }
         
         .servico {
             width: 100%;
             text-align: left;
             margin: 3%;
-            background: #C6FFDD;
-            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-            background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
-            border-radius: 7px;
+            margin-bottom: 5%;
             box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
         }
         
         .servico img {
-            border-radius: 7px 7px 0 0;
+            border-radius: 2px 2px 0 0;
             justify-content: center;
             align-items: center;
+            display: fixed;
+            background-blend-mode: multiply;
+        }
+        
+        .servico:hover span {
+            visibility: visible;
+            opacity: .6;
         }
         
         .inner {
@@ -226,7 +274,7 @@
         
         .inner a {
             font-size: 1.5rem;
-            color: #a14100;
+            color: #e9e6e5;
             font-weight: 700;
         }
         
@@ -242,4 +290,90 @@
             color: rgb(44, 21, 0);
             line-height: 1.5rem;
             font-weight: 290;
+        }
+        /* Nesletter */
+        
+        .newsletter {
+            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
+        }
+        
+        .newsletter h2 {
+            font-size: 2rem;
+            color: snow;
+            font-weight: 700;
+        }
+        
+        .newsletter h3 {
+            color: whitesmoke;
+            margin-top: 1%;
+            font-size: 1.4rem;
+        }
+        
+        .newsletter form {
+            margin-top: 2%;
+        }
+        
+        .newsletter input {
+            width: 100%;
+            margin-bottom: 2%;
+            padding: 5%;
+            color: rgb(223, 223, 223);
+            border: 2px solid rgba(255, 255, 255, 0.699);
+            color: snow;
+            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
+        }
+        
+        .newsletter button {
+            width: 100%;
+            padding: 5%;
+            cursor: pointer;
+            background-color: snow;
+            color: #fc4a1a;
+            font-size: 1.5rem;
+            font-weight: 600;
+            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
+        }
+        /* Rodapé */
+        
+        .rodape {
+            color: rgb(150, 22, 0);
+        }
+        
+        .social-icons a {
+            font-size: 2rem;
+            color: rgba(255, 68, 0, 0.616);
+            margin-right: 3%;
+            transition: all .2s;
+        }
+        
+        .social-icons a:last-child {
+            margin-right: 0;
+        }
+        
+        .copyright {
+            margin-top: 2%;
+            font-weight: 400;
+        }
+        /* Mobile First */
+        /* Pequenos Devices */
+        
+        @media screen and (min-width: 480px) {
+            .logo {
+                background: url(../img/icones/240.png) center center/214px no-repeat;
+                width: 214px;
+            }
+            .banner .btn {
+                font-size: 2rem;
+            }
+        }
+        /* Tablets */
+        
+        @media screen and (min-width: 768px) {
+            .logo {
+                background: url(../img/icones/768.png) center center/428px no-repeat;
+                width: 428px;
+            }
+            .banner .btn {
+                font-size: 2.2rem;
+            }
         }

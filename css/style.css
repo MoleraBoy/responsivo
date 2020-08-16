@@ -1,381 +1,482 @@
-        * {
-            margin: 0;
-            padding: 0;
-            font-size: 100;
-            border: none;
-            outline: none;
-            font-weight: 300;
-            box-sizing: border-box;
-            font-family: var(--font-secundary);
-        }
-        /* Root */
-        
-         :root {
-            --font-primary: 'Baloo Tamma 2';
-            --font-secundary: 'Roboto';
-            --font-action: 'Roboto Condensed';
-        }
-        /* Formatação dos textos, imagens, cores etc */
-        
-        h1 {
-            font-family: var(--font-primary);
-            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
-        }
-        
-        h2 {
-            font-family: var(--font-secundary);
-            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
-        }
-        
-        h3 {
-            font-family: var(--font-secundary);
-            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
-        }
-        
-        h4 {
-            font-family: var(--font-secundary);
-            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
-        }
-        
-        p {
-            font-family: var(--font-secundary);
-            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
-        }
-        
-        body span {
-            font-family: var(--font-secundary);
-            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
-            color: #fbebcd;
-            opacity: .5;
-            visibility: hidden;
-        }
-        
-        button {
-            font-family: var(--font-action);
-            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
-        }
-        
-        button:hover {
-            color: rgb(255, 68, 0);
-        }
-        
-        button i:hover {
-            color: rgb(255, 68, 0);
-        }
-        
-        a {
-            font-family: var(--font-action);
-            text-decoration: none;
-        }
-        
-        a:hover {
-            color: rgb(255, 68, 0);
-        }
-        
-        .link a:hover {
-            color: rgb(255, 68, 0);
-        }
-        
-        ul li a:hover {
-            color: rgb(255, 68, 0);
-        }
-        
-        ul {
-            list-style: none;
-        }
-        
-        img {
-            width: 100%;
-        }
-        
-        body {
-            background: #C6FFDD;
-            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-            background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
-        }
-        
-        .container {
-            width: 100%;
-            float: left;
-            padding: 3% 4%;
-            text-align: center;
-        }
-        
-        .bg-left {
-            background: #C6FFDD;
-            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-            background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
-        }
-        
-        .bg-right {
-            background: #C6FFDD;
-            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-            background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
-        }
-        
-        .bg-2-left {
-            background: #FDC830;
-            background: -webkit-linear-gradient(to right, #F37335, #FDC830);
-            background: linear-gradient(to left, #F37335, #FDC830);
-        }
-        
-        .bg-2-right {
-            background: #FDC830;
-            background: -webkit-linear-gradient(to right, #F37335, #FDC830);
-            background: linear-gradient(to right, #F37335, #FDC830);
-            opacity: .9;
-        }
-        
-        .radius {
-            border-radius: 5px;
-        }
-        
-        .inner a {
-            font-size: 10rem;
-        }
-        /* Cabess */
-        
-        .logo {
-            width: 56px;
-            height: 56px;
-            float: left;
-            background: url(../img/logo/logo-mobile.png) center center/56px no-repeat;
-            font-size: 0;
-            box-shadow: rgba(0, 0, 0, .35);
-        }
-        
-        .btn-menu {
-            width: 56px;
-            height: 56px;
-            float: right;
-            text-align: center;
-            color: #ff5858;
-            border-radius: 56px;
-            cursor: pointer;
-            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
-        }
-        /* Menu */
-        
-        .menu {
-            display: none;
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            background-color: rgba(0, 0, 0, .5);
-            top: 0;
-            left: 0;
-            z-index: 100;
-        }
-        
-        .btn-close {
-            font-size: 1.5rem;
-            color: #FBD786;
-            float: right;
-            margin: 2% 3% 0 0;
-        }
-        
-        .menu ul {
-            width: 100%;
-            float: left;
-            text-align: center;
-        }
-        
-        .menu li {
-            padding: 1.5%;
-        }
-        
-        .menu li a {
-            font-size: 2.6rem;
-            color: whitesmoke;
-            padding: 1.5% 3%;
-            text-shadow: .3rem .4rem 0.125rem rgba(185, 126, 77, 0.219);
-        }
-        
-        .menu li a:hover {
-            border: 1px solid #cf530086;
-        }
-        
-        .banner {
-            margin-top: 5%;
-            background: url(../img/bg/bg-mobile.jpg) no-repeat fixed;
-            background-size: cover;
-            background-color: rgba(0, 0, 0, .35);
-            background-blend-mode: multiply;
-            background-attachment: fixed;
-            opacity: .95;
-        }
-        
-        .banner:hover span {
-            visibility: visible;
-        }
-        
-        .title {
-            width: 100%;
-        }
-        
-        .title h2 {
-            font-size: 2.5rem;
-            color: rgb(252, 236, 208);
-            font-weight: 700;
-            margin-bottom: 2%;
-        }
-        
-        .title h3 {
-            font-size: 1.5rem;
-            color: rgb(252, 236, 208);
-            margin-bottom: 2%;
-        }
-        
-        .banner .btn {
-            width: 100%;
-            font-size: 2rem;
-            text-align: center;
-            cursor: pointer;
-            padding: 5%;
-            border-radius: 10px;
-            margin-top: 2%;
-            color: #a14100;
-            font-size: 1.5rem;
-        }
-        
-        .banner button i {
-            float: right;
-        }
-        /* Serviços */
-        
-        .servicos {
-            padding-right: 9%;
-        }
-        
-        .servico {
-            width: 100%;
-            text-align: left;
-            margin: 3%;
-            margin-bottom: 5%;
-            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
-        }
-        
-        .servico img {
-            border-radius: 2px 2px 0 0;
-            justify-content: center;
-            align-items: center;
-            display: fixed;
-            background-blend-mode: multiply;
-        }
-        
-        .servico:hover span {
-            visibility: visible;
-            opacity: .6;
-        }
-        
-        .inner {
-            padding: 7%;
-        }
-        
-        .inner a {
-            font-size: 1.5rem;
-            color: #e9e6e5;
-            font-weight: 700;
-        }
-        
-        .inner h4 {
-            font-size: 1.2rem;
-            color: #672100;
-            margin-top: 3%;
-            font-weight: 490;
-        }
-        
-        .inner p {
-            margin-top: 6%;
-            color: rgb(44, 21, 0);
-            line-height: 1.5rem;
-            font-weight: 290;
-        }
-        /* Nesletter */
-        
-        .newsletter {
-            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
-        }
-        
-        .newsletter h2 {
-            font-size: 2rem;
-            color: snow;
-            font-weight: 700;
-        }
-        
-        .newsletter h3 {
-            color: whitesmoke;
-            margin-top: 1%;
-            font-size: 1.4rem;
-        }
-        
-        .newsletter form {
-            margin-top: 2%;
-        }
-        
-        .newsletter input {
-            width: 100%;
-            margin-bottom: 2%;
-            padding: 5%;
-            color: rgb(223, 223, 223);
-            border: 2px solid rgba(255, 255, 255, 0.699);
-            color: snow;
-            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
-        }
-        
-        .newsletter button {
-            width: 100%;
-            padding: 5%;
-            cursor: pointer;
-            background-color: snow;
-            color: #fc4a1a;
-            font-size: 1.5rem;
-            font-weight: 600;
-            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
-        }
-        /* Rodapé */
-        
-        .rodape {
-            color: rgb(150, 22, 0);
-        }
-        
-        .social-icons a {
-            font-size: 2rem;
-            color: rgba(255, 68, 0, 0.616);
-            margin-right: 3%;
-            transition: all .2s;
-        }
-        
-        .social-icons a:last-child {
-            margin-right: 0;
-        }
-        
-        .copyright {
-            margin-top: 2%;
-            font-weight: 400;
-        }
-        /* Mobile First */
-        /* Pequenos Devices */
-        
-        @media screen and (min-width: 480px) {
-            .logo {
-                background: url(../img/icones/240.png) center center/214px no-repeat;
-                width: 214px;
-                transition: all .4s;
-            }
-            .banner .btn {
-                font-size: 2rem;
-            }
-        }
-        /* Tablets */
-        
-        @media screen and (min-width: 768px) {
-            .logo {
-                background: url(../img/icones/768.png) center center/428px no-repeat;
-                width: 428px;
-                transition: all .4s;
-            }
-            .banner .btn {
-                font-size: 2.2rem;
-            }
-        }
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            font-size: 100;
+                            border: none;
+                            outline: none;
+                            font-weight: 300;
+                            box-sizing: border-box;
+                            font-family: var(--font-secundary);
+                        }
+                        /* Root */
+                        
+                         :root {
+                            --font-primary: 'Baloo Tamma 2';
+                            --font-secundary: 'Roboto';
+                            --font-action: 'Roboto Condensed';
+                        }
+                        /* Formatação dos textos, imagens, cores etc */
+                        
+                        h1 {
+                            font-family: var(--font-primary);
+                            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+                        }
+                        
+                        h2 {
+                            font-family: var(--font-secundary);
+                            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+                        }
+                        
+                        h3 {
+                            font-family: var(--font-secundary);
+                            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+                        }
+                        
+                        h4 {
+                            font-family: var(--font-secundary);
+                            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+                        }
+                        
+                        p {
+                            font-family: var(--font-secundary);
+                            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+                        }
+                        
+                        body span {
+                            font-family: var(--font-secundary);
+                            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+                            color: #fbebcd;
+                            opacity: .5;
+                            visibility: hidden;
+                        }
+                        
+                        button {
+                            font-family: var(--font-action);
+                            text-shadow: .3rem .4rem 0.125rem rgba(0, 0, 0, 0.123);
+                        }
+                        
+                        button:hover {
+                            color: rgb(255, 68, 0);
+                        }
+                        
+                        button i:hover {
+                            color: rgb(255, 68, 0);
+                        }
+                        
+                        a {
+                            font-family: var(--font-action);
+                            text-decoration: none;
+                        }
+                        
+                        a:hover {
+                            color: rgb(255, 68, 0);
+                        }
+                        
+                        .link a:hover {
+                            color: rgb(255, 68, 0);
+                        }
+                        
+                        ul li a:hover {
+                            color: rgb(255, 68, 0);
+                        }
+                        
+                        ul {
+                            list-style: none;
+                        }
+                        
+                        img {
+                            width: 100%;
+                        }
+                        
+                        body {
+                            background: #C6FFDD;
+                            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+                            background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
+                        }
+                        
+                        .container {
+                            width: 100%;
+                            float: left;
+                            padding: 3% 4%;
+                            text-align: center;
+                        }
+                        
+                        .bg-left {
+                            background: #C6FFDD;
+                            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+                            background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);
+                        }
+                        
+                        .bg-right {
+                            background: #C6FFDD;
+                            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+                            background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+                        }
+                        
+                        .bg-2-left {
+                            background: #FDC830;
+                            background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+                            background: linear-gradient(to left, #F37335, #FDC830);
+                        }
+                        
+                        .bg-2-right {
+                            background: #FDC830;
+                            background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+                            background: linear-gradient(to right, #F37335, #FDC830);
+                            opacity: .9;
+                        }
+                        
+                        .radius {
+                            border-radius: 5px;
+                        }
+                        
+                        .inner a {
+                            font-size: 10rem;
+                        }
+                        /* Cabess */
+                        
+                        .logo {
+                            width: 56px;
+                            height: 56px;
+                            float: left;
+                            background: url(../img/logo/logo-mobile.png) center center/56px no-repeat;
+                            font-size: 0;
+                            box-shadow: rgba(0, 0, 0, .35);
+                        }
+                        
+                        .btn-menu {
+                            width: 56px;
+                            height: 56px;
+                            float: right;
+                            text-align: center;
+                            color: #ff5858;
+                            border-radius: 56px;
+                            cursor: pointer;
+                            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
+                        }
+                        /* Menu */
+                        
+                        .menu {
+                            display: none;
+                            width: 100%;
+                            height: 100%;
+                            position: fixed;
+                            background-color: rgba(0, 0, 0, .5);
+                            top: 0;
+                            left: 0;
+                            z-index: 100;
+                        }
+                        
+                        .btn-close {
+                            font-size: 1.5rem;
+                            color: #FBD786;
+                            float: right;
+                            margin: 2% 3% 0 0;
+                        }
+                        
+                        .menu ul {
+                            width: 100%;
+                            float: left;
+                            text-align: center;
+                        }
+                        
+                        .menu li {
+                            padding: 1.5%;
+                        }
+                        
+                        .menu li a {
+                            font-size: 2.6rem;
+                            color: whitesmoke;
+                            padding: 1.5% 3%;
+                            text-shadow: .3rem .4rem 0.125rem rgba(185, 126, 77, 0.219);
+                        }
+                        
+                        .menu li a:hover {
+                            border: 1px solid #cf530086;
+                        }
+                        
+                        .banner {
+                            margin-top: 5%;
+                            background: url(../img/bg/bg-mobile.jpg) no-repeat fixed;
+                            background-size: cover;
+                            background-color: rgba(0, 0, 0, .35);
+                            background-blend-mode: multiply;
+                            background-attachment: fixed;
+                            opacity: .95;
+                        }
+                        
+                        .banner:hover span {
+                            visibility: visible;
+                        }
+                        
+                        .title {
+                            width: 100%;
+                        }
+                        
+                        .title h2 {
+                            font-size: 2.5rem;
+                            color: rgb(252, 236, 208);
+                            font-weight: 700;
+                            margin-bottom: 2%;
+                        }
+                        
+                        .title h3 {
+                            font-size: 1.5rem;
+                            color: rgb(252, 236, 208);
+                            margin-bottom: 2%;
+                        }
+                        
+                        .banner .btn {
+                            width: 100%;
+                            font-size: 2rem;
+                            text-align: center;
+                            cursor: pointer;
+                            padding: 5%;
+                            border-radius: 10px;
+                            margin-top: 2%;
+                            color: #a14100;
+                            font-size: 1.5rem;
+                        }
+                        
+                        .banner button i {
+                            float: right;
+                        }
+                        /* Serviços */
+                        
+                        .servicos {
+                            padding-right: 9%;
+                        }
+                        
+                        .servico {
+                            width: 100%;
+                            text-align: left;
+                            margin: 3%;
+                            margin-bottom: 10%;
+                            margin-top: 10%;
+                            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
+                        }
+                        
+                        .servico img {
+                            border-radius: 2px 2px 0 0;
+                            justify-content: center;
+                            align-items: center;
+                            display: fixed;
+                            background-blend-mode: multiply;
+                        }
+                        
+                        .servico:hover span {
+                            visibility: visible;
+                            opacity: .6;
+                        }
+                        
+                        .inner {
+                            padding: 7%;
+                        }
+                        
+                        .inner a {
+                            font-size: 1.5rem;
+                            color: #e9e6e5;
+                            font-weight: 700;
+                        }
+                        
+                        .inner h4 {
+                            font-size: 1.2rem;
+                            color: #672100;
+                            margin-top: 3%;
+                            font-weight: 490;
+                        }
+                        
+                        .inner p {
+                            margin-top: 6%;
+                            color: rgb(44, 21, 0);
+                            line-height: 1.5rem;
+                            font-weight: 290;
+                        }
+                        /* Nesletter */
+                        
+                        .newsletter {
+                            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
+                        }
+                        
+                        .newsletter h2 {
+                            font-size: 2rem;
+                            color: snow;
+                            font-weight: 700;
+                        }
+                        
+                        .newsletter h3 {
+                            color: whitesmoke;
+                            margin-top: 1%;
+                            font-size: 1.4rem;
+                        }
+                        
+                        .newsletter form {
+                            margin-top: 2%;
+                        }
+                        
+                        .newsletter input {
+                            width: 100%;
+                            margin-bottom: 2%;
+                            padding: 5%;
+                            color: rgb(223, 223, 223);
+                            border: 2px solid rgba(255, 255, 255, 0.699);
+                            color: snow;
+                            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
+                        }
+                        
+                        .newsletter button {
+                            width: 100%;
+                            padding: 5%;
+                            cursor: pointer;
+                            background-color: snow;
+                            color: #fc4a1a;
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            box-shadow: 0 .125rem .125rem 0 rgba(0, 0, 0, 0.151), 0 .187rem 1px -125rem rgba(0, 0, 0, 0.171), 0 1px .312rem 0 rgba(0, 0, 0, 0.192);
+                        }
+                        /* Rodapé */
+                        
+                        .rodape {
+                            color: rgb(150, 22, 0);
+                        }
+                        
+                        .social-icons a {
+                            font-size: 2rem;
+                            color: rgba(255, 68, 0, 0.616);
+                            margin-right: 3%;
+                            transition: all .2s;
+                        }
+                        
+                        .social-icons a:last-child {
+                            margin-right: 0;
+                        }
+                        
+                        .copyright {
+                            margin-top: 2%;
+                            font-weight: 400;
+                        }
+                        /* Mobile First */
+                        /* Pequenos Devices */
+                        
+                        @media screen and (min-width: 480px) {
+                            .logo {
+                                background: url(../img/logo/240.png) center center/214px no-repeat;
+                                width: 214px;
+                                border-radius: 5px;
+                                box-shadow: 0 .125rem .125rem 0 rgba(90, 90, 90, 0.151), 0 .187rem 1px -125rem rgba(90, 90, 90, 0.151), 0 1px .312rem 0 rgba(90, 90, 90, 0.151);
+                                transition: all .4s;
+                            }
+                            .banner .btn {
+                                font-size: 2rem;
+                            }
+                            .newsletter button {
+                                font-size: 1.8rem;
+                            }
+                            .servico p {
+                                font-size: 1.1rem;
+                            }
+                        }
+                        /* Tablets */
+                        
+                        @media screen and (min-width: 768px) {
+                            .logo {
+                                background: url(../img/logo/480.png) center center/428px no-repeat;
+                                width: 428px;
+                                border-radius: 5px;
+                                box-shadow: 0 .125rem .125rem 0 rgba(90, 90, 90, 0.151), 0 .187rem 1px -125rem rgba(90, 90, 90, 0.151), 0 1px .312rem 0 rgba(90, 90, 90, 0.151);
+                                transition: all .4s;
+                            }
+                            .banner .btn {
+                                font-size: 2.4rem;
+                            }
+                            .servicos {
+                                padding-right: 5%;
+                            }
+                            .servico {
+                                margin-right: 2%;
+                                width: 45%;
+                                float: left;
+                                margin-bottom: 0%;
+                            }
+                            .servico p {
+                                font-size: 1.2rem;
+                            }
+                            .uno {
+                                margin-top: 5%;
+                                margin-bottom: 4%;
+                                float: left;
+                            }
+                            .duo {
+                                margin-bottom: 5%;
+                                margin-top: 0;
+                                margin-left: 12%;
+                                width: 77%;
+                                align-content: center;
+                            }
+                        }
+                        
+                        .newsletter h2 {
+                            font-size: 3rem;
+                            color: snow;
+                            font-weight: 700;
+                        }
+                        
+                        .newsletter h3 {
+                            font-size: 1.5rem;
+                        }
+                        
+                        .newsletter input {
+                            width: 70%;
+                            padding: 2%;
+                            float: left;
+                            margin-right: 1%;
+                        }
+                        
+                        .newsletter button {
+                            width: 28%;
+                            height: 48px;
+                            font-size: 1.2rem;
+                            padding: 2%;
+                            float: right;
+                            justify-content: center;
+                            margin-top: 0;
+                        }
+                        /* Devices médios - Tablets e Desktops */
+                        
+                        @media screen and (min-width: 960px) {
+                            .logo {
+                                background: url(../img/logo/960.png) center center/620px no-repeat;
+                                width: 660px;
+                                border-radius: 5px;
+                                box-shadow: 0 .125rem .125rem 0 rgba(90, 90, 90, 0.151), 0 .187rem 1px -125rem rgba(90, 90, 90, 0.151), 0 1px .312rem 0 rgba(90, 90, 90, 0.151);
+                                transition: all .4s;
+                            }
+                            .title {
+                                width: 70%;
+                                float: left;
+                                text-align: center;
+                            }
+                            .banner .btn {
+                                width: 30%;
+                                height: 20%;
+                                font-size: 2rem;
+                                float: right;
+                                text-align: center;
+                                padding: 5%;
+                                border-radius: 10px;
+                                margin-top: 2%;
+                            }
+                            .banner .title {
+                                text-align: center;
+                                margin-top: 5%;
+                            }
+                            .banner h2 {
+                                font-size: 3rem;
+                            }
+                            .banner h3 {
+                                font-size: 2rem;
+                            }
+                            .banner span {
+                                font-size: 1.5rem;
+                            }
+                        }
